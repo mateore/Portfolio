@@ -1,0 +1,40 @@
+/* MEDIA QUERIES MOBILE */
+
+@media screen and (max-width: 575px) {
+    .logo {
+        display: none;
+    }
+}
+
+.presentacion {
+    grid-area: presentacion;
+    z-index: 2;
+    margin: 20px;
+
+    align-items: center p {
+        font-family: Arial, Helvetica, sans-serif;
+        color: rgba(255, 255, 255, 0.815);
+        text-align: center;
+    }
+}
+
+
+/* MEDIA QUERIES TABLET */
+
+@media screen and (max-width: 850px) {
+
+    .galeria2 {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .contenedor-inicio {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        row-gap: 0%;
+    }
+}
