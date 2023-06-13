@@ -11,6 +11,14 @@
     row-gap: 5%;
 }
 
+.presentacion p {
+    z-index: 2;
+    font-family: Arial, Helvetica, sans-serif;
+    color: aliceblue;
+    margin: 20px;
+
+}
+
 #fotos-inicio {
     grid-area: fotos-inicio;
     width: 100%;
