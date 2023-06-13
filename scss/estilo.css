@@ -82,6 +82,10 @@
   grid-area: presentacion;
   z-index: 2;
   margin: 20px;
+  align-items: center p;
+  align-items-font-family: Arial, Helvetica, sans-serif;
+  align-items-color: rgba(255, 255, 255, 0.815);
+  align-items-text-align: center;
 }
 
 /* MEDIA QUERIES TABLET */
@@ -159,7 +163,7 @@
   opacity: 80%;
 }
 
-/* VIDEO */
+/* VIDEO    */
 .contenedor-principal {
   background-image: url("../Multimedia/fotos/foto-fondo(1).jpg");
   background-repeat: no-repeat;
