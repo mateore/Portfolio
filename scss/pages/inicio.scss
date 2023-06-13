@@ -9,13 +9,6 @@
         "fotos-inicio textofoto-inicio"
         "videos-inicio textovideo-inicio";
     row-gap: 5%;
-    .presentacion { 
-        p { 
-            color:$white-background
-            
-         }
-    
-    }
 }
 
 #fotos-inicio {
@@ -39,7 +32,6 @@
         }
     }
 }
-
 
 .textofoto-inicio {
     grid-area: textofoto-inicio;
