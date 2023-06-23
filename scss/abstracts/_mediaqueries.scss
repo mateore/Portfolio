@@ -1,8 +1,48 @@
 /* MEDIA QUERIES MOBILE */
 
 @media screen and (max-width: 575px) {
+
     .logo {
         display: none;
+    }
+
+    .menu {
+        .enlaces {
+            li {
+                a {
+                    display: none;
+                }
+            }
+        }
+
+        .logo {
+            position: absolute;
+            top: 7px;
+            left: 7px;
+            padding: 10px;
+            width: 5rem;
+        }
+
+        .menu-hamburger-container {
+            display: flex !important;
+            justify-content: center;
+        }
+    }
+
+    .label-name {
+        color: $text-white;
+        font-weight: bold;
+        font-size: 1rem !important;
+    }
+
+    textarea {
+        width: 75% !important;
+    }
+
+    .logoredes {
+        a{
+            display: none;
+        }   
     }
 }
 

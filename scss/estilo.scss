@@ -2,6 +2,9 @@
 @import "abstracts/_mediaqueries.scss";
 @import "abstracts/_variables.scss";
 @import "abstracts/_mixins.scss";
+@import "layout/_navbar.scss";
+@import "layout/_footer.scss";
+
 
 * {
     margin: 0;
@@ -22,50 +25,18 @@
 }
 
 .bienvenido {
-
     a {
         position: absolute;
         top: 50%;
         left: 50%;
         margin-top: -50px;
         margin-left: -100px;
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-family: $tipografia1;
         color: rgba(255, 255, 255, 0.699);
         text-decoration: none;
         z-index: 2;
-     }
-
-
-
-}
-
-
-/* FOTOS  */
-
-.galeria2-contenedor {
-    width: 100vw;
-    text-align: center;
-
-    .galeria2 {
-        z-index: 2;
-        top: 20;
-        display: inline;
-        align-items: center;
-
-        img {
-            width: 200px;
-            height: 200px;
-            margin: 10px;
-            object-fit: cover;
-        }
-
-        img:hover {
-            opacity: 80%;
-        }
     }
 }
-
-/* VIDEO    */  
 
 .contenedor-principal {
     background-image: url("../Multimedia/fotos/foto-fondo(1).jpg");
@@ -73,43 +44,36 @@
     background-size: cover;
     background-attachment: fixed;
 
-    .menu {
-        position: relative;
-        width: 100%;
-        margin: auto;
-        z-index: 2;
+    /* FOTOS  */
 
+    .galeria2-contenedor {
+        width: 100vw;
+        text-align: center;
 
-        .enlaces {
-            list-style-type: none;
-            display: flex;
-            justify-content: flex-end;
-            padding: 10px;
+        .galeria2 {
+            z-index: 2;
+            top: 20;
+            display: inline;
+            align-items: center;
 
-            li {
-                margin-right: 5%;
-                padding: 26px;
-                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            img {
+                width: 200px;
+                height: 200px;
+                margin: 10px;
+                object-fit: cover;
+            }
 
-                a {
-                    text-decoration: none;
-                    color: rgb(241, 241, 240);
-                }
-
-                a:hover {
-                    color: rgba(0, 0, 0, 0.808);
-                }
+            img:hover {
+                opacity: 80%;
             }
         }
     }
 
+    /* VIDEO    */
+
     .galeriavideo {
-        position: absolute;
-        top: 100px;
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: center;
+
+        @include flexRow;
         width: 100%;
 
         video {
@@ -121,121 +85,35 @@
         }
     }
 
-}
-
-.logo {
-    position: absolute;
-    top: 7px;
-    left: 7px;
-    padding: 10px;
-    width: 5rem;
-}
-
-/* CONTACTO */
-
-.contenedor-contacto {
-    background-image: url("../Multimedia/fotos/foto\ fondo(2).jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-
+    /* CONTACTO */
 
     .formulario {
-        position: absolute;
-        top: 30%;
-        left: 50%;
-        margin-top: -50px;
-        margin-left: -100px;
-        z-index: 2;
-        font-family: Arial, Helvetica, sans-serif;
-    }
-
-    /* FOOTER  */
-
-    footer {
-        z-index: 2;
-        position: fixed;
-        bottom: 0px;
-        width: 100%;
-        height: 10vh;
-        background: #000000;
-        font-family: Arial, Helvetica, sans-serif;
-
-        p {
-            @include footerText;
-        }
-    }
-
-    .logoredes {
-        display: flex;
-        justify-content: end;
+        @include flexCol;
         align-items: center;
-        height: 50%;
-        margin-bottom: 200px;
+        z-index: 2;
+        font-family: $tipografia1;
+        position: relative;
+        top: 100px;
 
-        img {
-            width: 40px;
-            padding-bottom: 90px;
+
+        form {
+            position: relative;
+            bottom: 50px;
+
+            span {
+                display: block;
+            }
+
+            .label-name {
+                color: $text-white;
+                font-weight: bold;
+                font-size: 1.5rem;
+            }
         }
+
+        textarea {
+            width: 100%;
+        }
+
     }
-}
-
-.fondoformulario {
-    background-color: rgb(212, 211, 211);
-    font-family: Arial, Helvetica, sans-serif
-}
-
-.enlaces-contacto {
-    list-style-type: none;
-    display: flex;
-    justify-content: flex-end;
-    padding: 10px;
-
-    li {
-        margin-right: 5%;
-        padding: 26px;
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-
-        a {
-            text-decoration: none;
-            color: rgba(0, 0, 0, 0.808);
-        }
-
-        a:hover {
-            color: rgb(241, 241, 240);
-        }
-    }
-
-}
-
-/* FOOTER  */
-
-footer {
-    z-index: 2;
-    position: fixed;
-    bottom: 0px;
-    width: 100%;
-    height: 10vh;
-    background: #000000;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-footer p {
-    font-family: Arial, Helvetica, sans-serif;
-    color: rgba(245, 245, 245, 0.681);
-    margin-left: 15px;
-    margin-top: 25px;
-}
-
-.logoredes {
-    display: flex;
-    justify-content: end;
-    align-items: center;
-    height: 50%;
-    margin-bottom: 200px;
-}
-
-.logoredes img {
-    width: 40px;
-    padding-bottom: 90px;
 }

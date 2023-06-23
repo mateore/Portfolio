@@ -1,0 +1,43 @@
+.contenedor-principal {
+    .menu {
+        position: relative;
+        width: 100%;
+        margin: auto;
+        z-index: 2;
+
+        .enlaces {
+            list-style-type: none;
+            display: flex;
+            justify-content: flex-end;
+            padding: 10px;
+
+            li {
+                margin-right: 5%;
+                padding: 26px;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+                a {
+                    text-decoration: none;
+                    color: rgb(241, 241, 240);
+                }
+
+                a:hover {
+                    color: rgba(0, 0, 0, 0.808);
+                }
+            }
+        }
+
+        .logo {
+            position: absolute;
+            top: 7px;
+            left: 7px;
+            padding: 10px;
+            width: 5rem;
+        }
+
+        .menu-hamburger-container {
+            display: none;
+        }
+
+    }
+}
