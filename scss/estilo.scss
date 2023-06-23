@@ -25,16 +25,17 @@
 }
 
 .bienvenido {
+    font-size: 5rem;
+    position: relative;
+    top: 250px;
+    @include flexCol;
     a {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        margin-top: -50px;
-        margin-left: -100px;
-        font-family: $tipografia1;
+   
+        font-family: 'Ruslan Display', cursive;
         color: rgba(255, 255, 255, 0.699);
         text-decoration: none;
         z-index: 2;
+        font-size: 5rem;
     }
 }
 

@@ -68,6 +68,10 @@
       margin: 20px; }
 
 /* MEDIA QUERIES MOBILE */
+@media screen and (max-width: 700px) {
+  .bienvenido a {
+    font-size: 1.8rem !important; } }
+
 @media screen and (max-width: 575px) {
   .logo {
     display: none; }
@@ -186,16 +190,21 @@ footer {
   object-fit: cover;
   z-index: 1; }
 
-.bienvenido a {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-top: -50px;
-  margin-left: -100px;
-  font-family: "Roboto";
-  color: rgba(255, 255, 255, 0.699);
-  text-decoration: none;
-  z-index: 2; }
+.bienvenido {
+  font-size: 5rem;
+  position: relative;
+  top: 250px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .bienvenido a {
+    font-family: 'Ruslan Display', cursive;
+    color: rgba(255, 255, 255, 0.699);
+    text-decoration: none;
+    z-index: 2;
+    font-size: 5rem; }
 
 .contenedor-principal {
   background-image: url("../Multimedia/fotos/foto-fondo(1).jpg");
